@@ -1,8 +1,18 @@
 body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  font: 14px;
+  font-family: 'Lato', sans-serif;
 }
 
 a {
   color: #00B7FF;
+}
+
+tbody {
+  background-color: #FFFFFF;
+}
+
+#title {
+    font-size: 44px;
+    text-align: center;
+    padding-top:18px;
 }
