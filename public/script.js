@@ -5,10 +5,10 @@ $(document).ready(function() {
 
     var ONE_DAY = 24 * 60 * 60 * 1000; // hours*minutes*seconds*milliseconds
 
-    var daysRemaining = Math.round(Math.abs((presentDate.getTime() - reunionsDate.getTime()) / (ONE_DAY)));
-
+    var daysRemaining = Math.floor(Math.abs((presentDate.getTime() - reunionsDate.getTime()) / (ONE_DAY)));
+    var hoursRemaining = Math.ceil(24 - Math.abs((presentDate.getHours() - reunionsDate.getHours())));
     // display countdown
-    $('#countdown').html('Only ' + daysRemaining + ' days \'til Reunions!');
+    $('#countdown').html('Only ' + daysRemaining + ' days, ' + hoursRemaining + ' hours \'til Reunions!');
 
     function backgroundGradient() {
         var topGradients = [

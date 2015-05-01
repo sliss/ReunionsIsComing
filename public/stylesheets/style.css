@@ -12,7 +12,8 @@ body {
 }
 
 a {
-    color: #00B7FF;
+    color: #0023AD;
+    font-size: 20px;
 }
 
 tbody {
@@ -25,10 +26,34 @@ tbody {
     padding-top:18px;
 }
 
+#container {
+    padding-bottom: 12px;
+}
+
 #shamecontain {
     padding: 50px;
 }
 
 #countdown {
     font-size: 30px;
+}
+
+#daycontent {
+    text-align: center;
+    padding-top:18px;
+}
+
+.PDS_Poll, .pds-box {
+    padding-top:12px;
+    width: 60%;
+    margin: 0 auto;
+    font-family: 'Lato', sans-serif !important;
+}
+
+.pds-answer-span {
+    font-family: 'Lato', sans-serif !important;
+}
+
+.pds-pd-link {
+    display:none !important;
 }

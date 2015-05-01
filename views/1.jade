@@ -1,16 +1,21 @@
 extends layout
 
 block content
-  br
-  div(align="center")
-    font(size="+5")
-      i
-        b Gandalf the Orange
-      a(href='/') Go back
-  br
-  br
-  div(align="center")
-    iframe(width="640", height="480", src="http://www.youtube.com/embed/gCAR5OivA8I?rel=0&autoplay=1", frameborder="0", allowfullscreen="")
-  br
-  center
-    a(href="http://en.wikipedia.org/wiki/Old_Nassau_reaction")  Wikipedia: Old Nassau reaction
+  div#daycontent
+    div.row
+        h1 Reunions is coming.
+    div.row
+        img(height = "200px" src = 'http://www.princeton.edu/main/images/news/2013/05/reunionswed_DSC_0437_575.jpg')
+        img(height = "200px" src = 'http://upload.wikimedia.org/wikipedia/commons/8/81/Pton-reunions-horde.jpeg')
+        img(height = "200px" src = 'http://www.princeton.edu/main/images/news/2013/05/reunionswed_Reunions2010_1974_575.jpg')
+
+    div.row#daycontent
+        div.col-md-2
+        div.col-md-8.center
+            script(type="text/javascript", charset="utf-8", src="http://static.polldaddy.com/p/8837219.js")
+            noscript
+              a(href="http://polldaddy.com/poll/8837219/") Reunions is less than a month away.  How ready are you???
+            br
+            a(href='/').center
+                | Back to calendar
+        div.col-md-2
